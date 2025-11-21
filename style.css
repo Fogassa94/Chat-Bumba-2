@@ -1,0 +1,85 @@
+/* style.css */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: url('bumbodromo.png') no-repeat center center;
+  background-size: cover;      /* cobre todo o container */
+  background-attachment: fixed;/* opcional, efeito parallax */
+  image-rendering: auto;       /* deixa o browser escolher o melhor modo */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  min-height: 100vh;
+}
+
+.chat {
+  width: 100%; 
+  max-width: 600px;
+  height: 400px; 
+  background:rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.messages {
+  
+  flex: 1; 
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.msg {
+  margin: 8px 0; 
+  padding: 8px 12px;
+  border-radius: 8px; 
+  max-width: 80%;
+}
+
+.user { 
+  background:rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  margin-left: auto; 
+  text-align: right; 
+}
+
+.bot { 
+  background:rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  margin-right: auto; 
+  
+  text-align: left; 
+}
+
+.input {
+  display: flex; 
+  background:rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+}
+
+.input input {
+  background:rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  flex: 1; 
+  padding: 10px; 
+  border: none; 
+  outline: none;
+
+}
+
+.input button {
+  background: #007bff; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px; 
+  cursor: pointer;
+}
+
+.input button:hover {
+  background: #0056b3;
+}
